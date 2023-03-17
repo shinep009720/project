@@ -15,6 +15,10 @@ body{
     font-family: cubic11;
 }
 
+::selection {
+	background:#77CEF0;
+	color: #fff;
+}
 h1{
     color: #FFC6A9;
     font-size: 28px;
@@ -92,7 +96,7 @@ a{
 }
 
 header{
-    background-color: #f59bbedd;
+    /* background-color: #f59bbedd; */
     position: sticky;
     top: 0;
     z-index: 999;
@@ -108,7 +112,7 @@ header div{
     justify-content:space-between;
 }
 header a img{
-    width: 20%;
+    width: 150px;
 }
 
 header a {
@@ -134,3 +138,146 @@ header ul li i:hover{
 
 
 /* -------------------地-------------------- */
+
+footer{
+    background-color: #7E58A5;
+    border-bottom: #FFC6A9 1px solid;
+}
+
+footer::before{
+    content: "";
+    padding: 25px;
+    background-color: #7E58A5;
+    display: block;
+    border-bottom: #FFC6A9 1px solid;
+
+}
+
+.footerwrap{
+    background-color:#7E58A5;
+    border-left: #FFC6A9 1px solid;
+    border-right: #FFC6A9 1px solid;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .1fr 1fr ;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.footerwrap h3{
+    font-size: 30px;
+    color: #FFC6A9;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.footerwrap p,.footerwrap a{
+    font-size: 20px;
+    color: #FFC6A9;
+}
+
+.copyright{
+    font-size: 16px;
+    color: #FFC6A9;
+    text-align: center;
+    background-color: #7E58A5;
+    padding: 13px;
+}
+.footerwrap div:first-child{
+    grid-column :1/2;
+    grid-row: 1/5;
+    width: 240px;
+    text-align: center;
+    align-self: center;
+}
+
+.footerwrap div:first-child img{
+    width: 150px;
+}
+
+.footerwrap .prodlist{
+    grid-column: 2/6;
+    grid-row: 1/4;
+    width: 960px;
+    box-sizing: border-box;
+    border-bottom: #FFC6A9 1px solid;
+    border-left: #FFC6A9 1px solid;
+    padding-top: 50px;
+    padding-left: 30px;
+
+}
+
+.footerwrap .prodlist h4{
+    font-size: 25px;
+    color: #FFC6A9;
+    margin-bottom: 20px;
+}
+
+.footerwrap .prodlist a{
+    display: block;
+}
+
+.footerwrap .prodlist p{
+    margin-bottom: 10px;
+}
+
+.footerwrap .prodlist li{
+    width: 270px;
+    margin: 0 20px;
+}
+
+.footerwrap .prodlist ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerwrap .page{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 480px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    border-left: #FFC6A9 1px solid;
+    border-right: #FFC6A9 1px solid;
+    padding: 30px 0;
+}
+
+.footerwrap .page h3 {
+    margin: 0;
+}
+
+.footerwrap .page h3:nth-child(even) {
+    border-left: #ffc6a9 1px solid ;
+}
+
+.footerwrap .page h3 a{
+    font-size: 30px;
+    display: block;
+    width: 234px;
+    color: #FFC6A9;
+    text-align: center;
+}
+
+.footerwrap .snslist{
+    grid-column: 4/6;
+    grid-row: 4/5;
+    width: 480px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footerwrap .snslist ul{
+    display: flex;
+    justify-content:center;
+}
+
+.footerwrap .snslist ul li a i{
+    font-size: 35px;
+    padding: 0 15px;
+}
+
+
+
