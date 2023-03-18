@@ -1,0 +1,139 @@
+@import url(reset.css);
+@import url(global.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.menu{
+    width: 380px;
+    height: 100vh;
+    box-sizing: border-box;
+    color: #FFC6A9;
+    background-color: #7E58A5;
+    float: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.menu::before{
+    content: " ";
+    display: block;
+    width: 100vw ;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    right: 380px;
+    top: 0;
+}
+
+.menu a{
+    color: #FFC6A9;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.menu h4::before{
+    content: "✢ ";
+    transition: 1s;
+    display:inline-block;
+}
+
+.menu h4::before:hover{
+    transform: rotate(135deg);
+}
+
+.menu h4{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.menu .logo img{
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+} 
+
+.menu .logo{
+    display: flex;
+    align-items:flex-start;
+    font-size: 30px;
+    width: 90%;
+}
+
+.menu p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+
+.menu .product ul > li{
+    padding-bottom: 15px;
+}
+
+
+.menu .prodlist ul{
+    flex-direction: column;
+}
+
+.menu .prodlist ul li{
+    margin-bottom: 30px;
+}
+
+.menu .product ,.menu .page, .menu .snslist, .menu .copyright{
+    /* background-color: #fff; */
+    width: 100%;
+    padding-left: 20px;
+}
+
+.menu .product{
+    border-bottom: #FFC6A9 1px solid;
+    border-top: #FFC6A9 1px solid;
+    padding-top: 15px;
+}
+
+.menu .page{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    border-bottom: #FFC6A9 1px solid;
+}
+
+.menu .snslist{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: #FFC6A9 1px solid;
+
+}
+
+.menu .snslist ul{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 25px;
+}
+
+.menu .copyright{
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+. menu .product ol{
+    display: none;
+}
