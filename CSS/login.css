@@ -53,11 +53,17 @@ form{
 }
 
 button{
-    border: none;
-    margin-bottom: 5px;
+    /* border: none; */
+    font-family: cubic11;
+}
+
+#login button{
     position: relative;
+    border: none; 
+    margin-bottom: 5px;
     left: 10%;
-    transform: translate(-0%,-0%)}
+}
+
 
 #remember{
     width: 20px;
@@ -79,7 +85,7 @@ label{
 /* ----------------------忘記密碼-------------------- */
 
 .forgetPassWord button{
-    position: static;
+    border: none; 
     text-align: center;
     margin: 0;
     margin-bottom: 5px;
@@ -92,8 +98,8 @@ label{
 /* ----------------------註冊-------------------- */
 
 .signin button{
-    position: static;
     text-align: center;
     margin: 0;
     margin-bottom: 5px;
+    border: none; 
 }

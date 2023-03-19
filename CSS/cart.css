@@ -1,0 +1,161 @@
+@import url(reset.css);
+@import url(global.css);
+
+.cart{
+    width: 1200px;
+}
+
+.cart .down{
+    padding: 40px;
+    font-size: 20px;
+}
+
+.itemcard{
+    width: 90%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-bottom: 2px dashed #F59BBE;
+}
+
+.itemcard img{
+    width: 9%;
+    border-radius:  10px;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+}
+
+.itemcard img:hover{
+    transform: scale(1.05);
+}
+
+.itemcard img:hover +.name{
+    text-decoration: underline;
+}
+
+.cart .name{
+    color: #fff;
+    text-align: left;
+    padding-left: 40px;
+    cursor: pointer;
+    flex-grow: 5;
+
+}
+
+.cart .name:hover{
+    text-decoration: underline;
+}
+
+.cart .price{
+    color: #7E58A5;
+    flex-grow: 5;
+}
+
+.cart .price::before,.cart .itemcard .amount::before{
+    content:"$"
+}
+
+.cart .amount{
+    flex-grow: 5;
+    text-align: right;
+}
+
+
+.cart .count{
+    vertical-align:text-bottom;
+    flex-grow: 7;
+    font-size: 25px;
+}
+
+.cart .count button{
+    background-color: #F59BBE;
+    color: #F06882;
+    border-color:#fbc7db ; 
+    border-radius: 100%;
+    cursor: pointer;
+    /* margin: 0;
+    padding: 0; */
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.cart .operate button{
+    color: #F59BBE;
+    background-color: #ffffff00;
+    border:none ; 
+    border-radius: 100%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.cart .operate{
+    flex-grow: 1;
+    text-align: center;
+    display: inline-block;
+}
+
+.cart .operate i{
+    font-size: 15px;
+}
+
+.cart button:active{
+
+}
+
+.item_header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 25px;
+    border-bottom: 2px dashed #F59BBE;
+}
+
+.item_header .name,.item_header .price,.item_header .count,.item_header .amount{
+    font-size: 20px;
+    color: #FFC6A9;
+    padding-left: 0;
+}
+
+.item_header .pic{
+    flex-grow: 12;
+    width: 9%;
+}
+
+.item_header .price{
+    text-align: right;
+}
+
+.item_header .count{
+    flex-grow: 0;
+    text-align:right;
+}
+
+.cart .pay h1{
+    display: inline-block;
+    float: right;
+    font-size: 30px;
+    margin-right: 35px;
+    margin-top: 30px;
+}
+
+.cart .pay h2{
+    text-align: right;
+    clear: both;
+    font-size: 20px;
+    margin-right: 35px;
+}
+
+.pay button{
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
