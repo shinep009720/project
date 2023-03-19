@@ -20,6 +20,20 @@ body{
 	background:#77CEF0;
 	color: #fff;
 }
+
+::-webkit-scrollbar{
+    background-color: #F06882;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FFC6A9;
+}
+
+::-webkit-scrollbar-button{
+    background-color: #FFC6A9;
+    color: #F06882;
+}
+
 h1{
     color: #FFC6A9;
     font-size: 28px;
