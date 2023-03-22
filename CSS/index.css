@@ -49,7 +49,8 @@
 
 
 .kv h6{
-    font-size: 90px;
+    font-size: 9rem;
+    width: fit-content;
     color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 40%;
@@ -71,7 +72,7 @@
 }
 
 .kv h5{
-    font-size: 68px;
+    font-size: 6.5rem;
     color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 67%;
@@ -95,7 +96,7 @@
 }
 
 .kv h4{
-    font-size: 40px;
+    font-size: 4rem;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0 0 0.3em #fff;
     position: absolute;
@@ -116,31 +117,16 @@
     }
 }
 
-/* .kv h6::before{
-    content: '';
-    height: 1px;
-    top: 50%;
-    left: -60%;
-    position: absolute;
-    background: white;
-    width: 60%;
+.kv h6,.kv h5,.kv h4{
+    white-space:nowrap
 }
-
-.kv h4::after{
-    content: '';
-    height: 1px;
-    top: 50%;
-    position: absolute;
-    background: white;
-    width: 160%;
-} */
-
 /* ----------------------新品互動-------------------- */
 
 .newwindow ul{
     /* background-color: #fff; */
     position: relative;
     padding: 40px;
+    box-sizing: border-box;
     width: 1200px;
     margin: 0 auto;
 
@@ -226,18 +212,22 @@
     flex-direction: column;
     align-items: flex-start;
     width: 1200px;
+    height: 368px;
+    box-sizing: border-box;
     margin: 50px auto;
     /* background-color: #fff; */
+    position: relative;
 }
 
 .newfile p{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #4D545A;
     margin-left: 15px;
 }
 
 .newfile a{
     text-decoration: none;
+    /* position:absolute ; */
 }
 
 .newfile h4{
@@ -247,7 +237,7 @@
     padding: 30px;
     padding-left: 16px;
     padding-bottom:  16px;
-    font-size: 38px;
+    font-size: 3.8rem;
     margin-left: 12px;
     color: #7E58A5;
     text-align: left;
@@ -259,9 +249,19 @@
 }
 
 .newfile{
-    position: relative;
+    position: absolute;
+    left: 10%;
     z-index: 1;
     margin-bottom: 20px;
+    padding: 6px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+.newfile2{
+    top: 50%;
 }
 
 
@@ -271,7 +271,7 @@
     list-style: none;
     position: absolute;
     top: 0%;
-    left: 380%;
+    left: 300%;
     transition: .7s;
     opacity: 0;
 }
@@ -279,9 +279,9 @@
 .newfile1:hover .six{
     opacity: 1;
     width: 500px;
-    font-size: 25px;
+    font-size: 2.5rem;
     top: -52%;
-    left: 232%;
+    left: 160%;
 }
 
 .newfile:hover{
@@ -294,7 +294,7 @@
     list-style: none;
     position: absolute;
     top: -107%;
-    left: 380%;
+    left: 300%;
     transition: .7s;
     opacity: 0;
 }
@@ -303,14 +303,14 @@
     opacity: 1;
     width: 500px;
     top: -152%;
-    left: 233%;
-    font-size: 25px;
+    left: 163%;
+    font-size: 2.5rem;
 
 }
 
 .newfile .up h1{
     color: #FFC6A9;
-    font-size: 20px;
+    font-size: 2rem;
     margin-left: 15px;
     margin-top: 5px;
 }
@@ -325,7 +325,7 @@
     padding: 400px;
     margin-top: 100px;
     position: relative;
-    font-size: 110px;
+    font-size: 11rem;
     letter-spacing: 12%;
     font-family: 'Black Han Sans', sans-serif;
     white-space: nowrap;
@@ -386,8 +386,9 @@
 .concept{
     width: 590px;
     position: absolute;
-    top: 30%;
-    left: 35%;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
     z-index: 6;
 }
@@ -403,13 +404,13 @@
 }
 
 .concept .down h2{
-    font-size: 30px;
+    font-size: 3rem;
     color: #7E58A5;
     margin: 20px 0;
 }
 
 .concept .down p{
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #4D545A;
     text-align-last: left;
     margin: 0 80px 50px;
@@ -422,17 +423,18 @@ html{
 /* ----------------------產品-------------------- */
 
 .product{
-    width: 1000px;
+    width: 650px;
     margin: 50px auto;
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
 }
 
 .product .up{
-    padding: 10px;
+    padding: 8px;
 }
 
 .product span{
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #4D545A;
     border: #4D545A 3px solid;
     box-shadow: #4d545a3c  3px 3px 2px ;
@@ -443,49 +445,77 @@ html{
 .product .down{
     padding: 20px;
 }
-.product .down div{
-    display: flex;
-    justify-content:space-around;
-    border: #4D545A 3px solid;
-    box-shadow: #4d545a3c  3px 3px 2px ;
-    margin-top: 20px;
-}
 
 .product .down ul{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    width: 90%;
+    border: #4D545A 3px solid;
+    box-shadow: #4d545a3c  3px 3px 2px ;
+    margin-top: 20px;
+    height: 320px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
+
+/* .product .down ul::-webkit-scrollbar-arrow-color{
+    color: #4D545A;
+} */
+
+.product .down ul::-webkit-scrollbar{
+    width: 2em;
+}
+
+.product .down ul::-webkit-scrollbar-thumb{
+    background-color:#7E58A5;
+    border-left: #4D545A 3px solid;
+    border-top: #4D545A 3px solid;
+    border-bottom: #4D545A 3px solid;
+}
+
+.product .down ul::-webkit-scrollbar-button{
+    background-color: #644586;
+    border-left: #4D545A 3px solid;
+}
+
+.product .down ul::-webkit-scrollbar-track{
+    border-left: #4D545A 3px solid;
+}
+
 
 .product .down ul li:hover {
     transform:scale(1.05);
     border: #583D74 3px dashed;
-
 }
 
-.product .down div img{
-    width: 40px;
+.product .down ul li {
+    margin: 18px;
+    margin-bottom: 25px;
+    padding: 5px;
+    padding-right: 8px;
 }
 
 .product .down ul li img{
-    width:287px;
+    width:200px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25)  12px 11px 7px ;
 }
 
 .product .down ul li p{
     color: #4D545A;
-    font-size: 38px;
+    font-size: 3rem;
     text-align: center;
 }
 
 .view{
-    width: 406px;
+    width: 300px;
     text-align: center;
     position: absolute;
-    top: -125px;
-    right: 600px;
+    top: 0;
+    right: 0;
     animation: jump;
     animation-duration: 1.8s;
     animation-iteration-count: infinite;
@@ -504,25 +534,29 @@ html{
 
 .view i{
     color:#FFC6A9;
-    font-size: 72px;
+    font-size: 4rem;
 }
 
 .view h2{
-    font-size: 30px;
+    font-size: 3rem
 }
 
-.view .down{
-    padding: 20px;
+.view .up{
+    padding: 3px;
 }
 
 .view .down div{
     display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 5px auto 0;
 }
 
-
 .view .down a{
-    margin: 0 20px;
-    transform: scaleY(.9);
+    font-size: 1.5rem;
+    width: 40%;
+    height: 35px;
+    line-height: 37px;
 }
 
 .viewwrap{
@@ -535,12 +569,12 @@ html{
     background-image: url(../IMG/visual.jpg);
     background-attachment: fixed;
     width: 1200px;;
-    height: 400px;
+    /* height: 400px; */
     margin: 300px auto 150px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    font-size: 60px;
+    font-size: 6rem;
     color: #ffffff;
     text-shadow:0px 0px 5px #ffffff,1px 1px 8px #7E58A5;
     text-align: center;
@@ -571,15 +605,17 @@ html{
 }
 
 .diagnosis .window{
-    width: 700px;
-    margin-left: 22%;
+    width: 600px;
+    margin: 0 auto;
     position: relative;
+    left: -13%;
+    
 }
 
 .diagnosis .window::before{
     content: "PARTY";
     position: absolute;
-    font-size: 100px;
+    font-size: 10rem;
     font-family:'Black Han Sans', sans-serif;
     color: #d93971db;
     text-shadow:#d93971b2 0 -50px,#d9397192 0 -100px,#d939716c 0 -150px,#d939715d 0 -200px,#d9397136 0 -250px,#ffffff21 0 -300px;
@@ -587,7 +623,7 @@ html{
 
 .diagnosis .window::before{
     top:65% ;
-    left: 125%;
+    left: 110%;
 }
 
 .diagnosis .down{
@@ -599,16 +635,16 @@ html{
 }
 
 .diagnosis .down h2{
-    font-size: 30px;
+    font-size: 2.5rem;
     color: #7E58A5;
-    margin: 50px 30px ;
+    margin: 30px 20px ;
 }
 
 .diagnosis .down p{
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #4D545A;
     text-align-last:left;
-    margin: 0 30px 50px 50px;
+    margin: 0 30px 20px 35px;
     display: block;
 }
 
@@ -640,7 +676,7 @@ html{
     margin-top: 200px;
     background-color: #F06882;
     color: #FFC6A9;
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -649,9 +685,11 @@ html{
 
 .follow span{
     position: relative;
+    line-height: 75px;
+    padding-top: 8px;
 }
 
-.follow span::before,
+/* .follow span::before,
 .follow span::after{
     content: "";
     background: #FFC6A9;
@@ -659,19 +697,23 @@ html{
     top: 50%;
     width: 100%;
     height: 2px;
-}
+} */
 
-.follow span::before{
+/* .follow span::before{
     left: 105%; 
 }
 
 .follow span::after{
     right: 105%;
-}
+} */
 
 .follow a{
     color: #FFC6A9;
     transition: .2s;
+}
+
+.follow i{
+    line-height: 75px;
 }
 
 .follow a:hover{
@@ -713,7 +755,7 @@ html{
 .insp i{
     position: absolute;
     color: white;
-    font-size: 28px;
+    font-size: 2.8rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -733,7 +775,7 @@ html{
     grid-row: 3/4;
     color: #F06882;
     display: flex;
-    font-size: 40px;
+    font-size: 4rem;
     justify-content: end;
     align-items: baseline;
 }
