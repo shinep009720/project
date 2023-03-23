@@ -14,7 +14,7 @@
     background-position: center center;
     padding: 200px 0;
     position: relative;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.551), 1px 0 15px rgba(0, 0, 0, 0.203);
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.551), 1px 0 15px rgba(0, 0, 0, 0.203); */
 }
 
 .kv .bar:before,
@@ -22,28 +22,28 @@
     z-index: -1;
     position: absolute;
     content: "";
-    bottom: 15px;
+    bottom: 16px;
     left: 10px;
     width: 50%;
     top: 80%;
-    max-width: 300px;
-    background: rgba(0, 0, 0, 0.55);
-    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.532);
-    -moz-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.593);
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.615);
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+    /* max-width: 300px; */
+    background: rgba(0, 0, 0, 0.625);
+    /* -webkit-box-shadow: 0 16px 14px rgba(0, 0, 0, 0.61); */
+    /* -moz-box-shadow: 0 16px 14px rgba(0, 0, 0, 0.676); */
+    box-shadow: 0 24px 16px rgba(0, 0, 0, 0.5);
+    /* -webkit-transform: rotate(-3deg); */
+    /* -moz-transform: rotate(-3deg); */
+    /* -o-transform: rotate(-3deg); */
+    /* -ms-transform: rotate(-3deg); */
+    transform: rotate(-2deg);
 }
 
 .kv .bar:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
+    /* -webkit-transform: rotate(3deg); */
+    /* -moz-transform: rotate(3deg); */
+    /* -o-transform: rotate(3deg); */
+    /* -ms-transform: rotate(3deg); */
+    transform: rotate(2deg);
     right: 10px;
     left: auto;
 }
@@ -728,23 +728,35 @@ html {
     padding-top: 8px;
 }
 
-/* .follow span::before,
-.follow span::after{
+.follow_sns{
+    background-color: #F06882;
+    padding: 0 10px;
+    z-index: 6;
+}
+
+.follow_words{
+    background-color: #F06882;
+    position: absolute;
+    z-index: 5;
+}
+
+.follow span::before,
+.follow span::after {
     content: "";
     background: #FFC6A9;
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 81%;
     height: 2px;
-} */
-
-/* .follow span::before{
-    left: 105%; 
 }
 
-.follow span::after{
+.follow span::before {
+    left: 104%;
+}
+
+.follow span::after {
     right: 105%;
-} */
+}
 
 .follow a {
     color: #FFC6A9;
