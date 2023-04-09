@@ -21,18 +21,18 @@ body{
 	color: #fff;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     background-color: #F06882;
-}
+} */
 
-::-webkit-scrollbar-thumb{
+/* ::-webkit-scrollbar-thumb{
     background-color: #FFC6A9;
-}
-
+} */
+/*
 ::-webkit-scrollbar-button{
     background-color: #FFC6A9;
     color: #F06882;
-}
+} */
 
 h1{
     color: #FFC6A9;
@@ -112,7 +112,7 @@ header{
     position: sticky;
     pointer-events: none;
     top: 0;
-    z-index: 999;
+    z-index: 99;
 
 }
 header div{
@@ -135,19 +135,19 @@ header a {
     pointer-events: auto;
 }
 
-header ul{
+header>div>ul{
     display: flex;
     align-items: center;
 }
 
-header ul li i{
+header>div>ul>li i{
     font-size: 2.6rem;
     color: #7E58A5;
     padding: 20px 0;
     letter-spacing: 25px;
 }
 
-header ul li i:hover{
+header>div>ul>li i:hover{
     transform: scale(1.05);
     color: #6e4c91;
 }

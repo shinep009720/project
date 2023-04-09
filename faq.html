@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>常見問題 ✢ Palette_Party ✢ Wish you a colourful life!</title>
     <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,15 +20,17 @@
 
 
     <style>
+        
         .faq_wrap {
             margin-bottom: 80px;
+            font-family: roboto;
         }
 
         .news {
             width: 1000px;
             margin: 0 auto;
             margin-bottom: 20px;
-            background-color: #ffffff72;
+            background-color: #ffffffb0;
             padding: 20px;
             border: #7E58A5 7px dashed;
         }
@@ -41,12 +44,12 @@
         .news h2 {
             display: block;
             padding: 0 100px;
-            font-size: 30px;
+            font-size: 3rem;
             /* margin-bottom: 20px; */
         }
 
         .news li {
-            font-size: 20px;
+            font-size: 2rem;
             color: #4D545A;
             margin-bottom: 20px;
             display: block;
@@ -60,10 +63,10 @@
             padding-left: 32px;
         }
 
-        .news p::before {
+        /* .news p::before {
             content: "空格";
             color: #4d545a00;
-        }
+        } */
 
         .news iframe {
             display: block;
@@ -83,25 +86,86 @@
             content: "";
             padding: 10px;
             display: block;
-            clear:
+            clear: both;
         }
     </style>
 
 </head>
 
 <body>
-    <!---------------------天---------------------->
-    <a href="news.html" class="ticker">Palette_Party ✢期間限定快閃店✢ 將於7/1~7/15在SOGO百貨忠孝館登場啦♪</a>
-    <header>
-        <div>
-            <a href="index.html"><img src="IMG/LOGO.png" alt=""></a>
-            <ul>
-                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-            </ul>
-        </div>
-    </header>
+        <!---------------------天---------------------->
+        <div class="cover"></div>
+        <a href="news.html" class="ticker">Palette_Party ✢期間限定快閃店✢ 於7/1~7/15在SOGO百貨忠孝館登場啦♪</a>
+        <header>
+            <div>
+                <a href="index.html"><img src="IMG/LOGO.png" alt=""></a>
+                <ul>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#" id="menuOpen"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html"> <img src="IMG/LOGO.png" alt=""></a>
+                <a href="#" id="menuClose">CLOSE</a>
+                <!-- <i class="fa-solid fa-x"></i> -->
+            </div>
+            <div class="product_menu">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li>
+                        <h4 class="more">Lip Color</h4>
+                        <ol class="show">
+                            <li>
+                                <p>POOL PARTY_水潤光唇釉</p>
+                            </li>
+                            <li><a href="">➺01 櫻桃可樂</a></li>
+                            <li><a href="">➺02 莓果雪沙</a></li>
+                            <li><a href="">➺03 橘子汽水</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4 class="more">Eye Shadow</h4>
+                        <ol class="show">
+                            <li>
+                                <p>PINGO PARTY_拼果眼影盤</p>
+                            </li>
+                            <li><a href="">➺01 葡萄軟糖</a></li>
+                            <li><a href="">➺02 萊姆軟糖</a></li>
+                            <li><a href="">➺03 綜合水果</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4 class="more">Undefined</h4>
+                        <ol class="show">
+                            <li><a href="">➺DISCO PARTY_炫色眼影蜜</a></li>
+                            <li><a href="">➺TRICK or KISS_桃氣唇頰盤</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="page">
+                <h3><a href="index.html#concept">ABOUT</a></h3>
+                <h3><a href="cart.html">CART</a></h3>
+                <h3><a href="faq.html">FAQ</a></h3>
+                <h3><a href="news.html">NEWS</a></h3>
+            </div>
+            <div class="snslist">
+                <h3>OFFICIAL SNS</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#">
+                    <li><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#">
+                    <li><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                ⓟ 2023 Palette_Party All Rights are NOT Reserved
+            </div>
+        </nav>
 
     <!---------------------NEWS---------------------->
     <div class="faq_wrap">
@@ -116,31 +180,59 @@
                     <p>如您已經將所有需要購買的產品放入購物車，並已準備要結帳時， 按下右上角的購物車圖示，即可進入購物車頁面，並按照下方指示訂購。<br>
                         接下來，您可以選擇用以下三種方式進行後續訂購步驟:
                     </p>
-                    <p>如您已經是官網會員，歡迎您先進行會員登入，按下右上角的人形圖示，即可進入登入頁面。</p>
-                    <p>如您尚未成為官網會員，歡迎完成訂購同時，在購物車中按下【建立會員帳戶】並輸入個人資訊完成建置，下次購買時，您登入會員後，即可無須再輸入個人資訊囉!</p>
-                    <p>訪客方式直接購買完成，不登入也不加入會員。</p>
+                    <p>★如您已經是官網會員，歡迎您先進行會員登入，按下右上角的人形圖示，即可進入登入頁面。</p>
+                    <p>★如您尚未成為官網會員，歡迎完成訂購同時，在購物車中按下【建立會員帳戶】並輸入個人資訊完成建置，下次購買時，您登入會員後，即可無須再輸入個人資訊囉!</p>
+                    <p>★訪客方式直接購買完成，不登入也不加入會員。</p>
                 </li>
-                <li>Q: 如何退換貨?</li>
-                <li>Q: 如何聯繫客服人員?</li>
-                <li>Q: 如何更換帳戶密碼與帳戶資訊?</li>
-                <li>Q: 如何領取官網優惠碼?</li>
+                <li>Q: 如何退換貨?
+                    <p>從完成下訂至收到貨後的7天鑑賞期間，您均可透過網站或客服專線/信箱，提出退換貨的需求。如您下定後尚未收到寄件通知而希望退訂，可撥打客服專線或寄信至客服信箱，我們將為您停止出貨。如您已經收到寄件通知，請至
+                        退換貨方式查詢我們的退貨說明。</p>
+                </li>
+
+                <li>Q: 如何領取官網優惠碼?
+                    <p>官網中的視窗畫面，按下右上角的<img src="IMG/close.jpg" alt="" style="width: 20px;">，關閉視窗後，可能會出現優惠碼喔！優惠碼可能出現在官網的任何頁面，快去找找吧！</p>
+                </li>
             </ul>
         </article>
 
         <article class="news">
             <h2>✢商品配送問題</h2>
+            <ul>
+                <li>Q: 可寄送到哪一個國家/地區?
+                    <p>目前我們可寄送到台灣本島、金門與澎湖等指定區域。</p>
+                </li>
+                <li>Q: 如何計算運費?
+                    <p>如單筆購買金額在1500元以下，酌收運費80元;單筆1500元以上即可享有免運優惠。</p>
+                </li>
+                <li>Q: 何時能收到我購買的商品?
+                    <p>如您在周一到週五工作日中午前完成訂購，最快將於隔日收到產品，如您在週五中午三點之後完成訂購，最快將在週二後收到訂單商品，另外如您居住在金門或澎湖等離島地區，由於運送過程較為繁複，將較台灣本島稍晚收到商品。</p>
+                </li>
+            </ul>
         </article>
 
         <article class="news">
             <h2>✢退換貨問題</h2>
+            <ul>
+                <li>Q: 是否可以退換貨?
+                    <p>為了讓您有無後顧之憂的購物體驗，您可任意提出退換貨的要求!
+                        同時，首次退換貨的運費將由我們為您處理!
+                        想知道更多退換貨的資訊，請至 退換貨方式 ，或寄 email至客服信箱， 或致電我們的客服專線， 客服人員將全力為您找到最合適的商品!</p>
+                </li>
+                <li>Q: 如果收到商品有誤或瑕疵該如何處理?
+                    <p>如您收到有瑕疵的產品或商品有誤，您可致電網站客服專線，或寄email至客服信箱 ，或上官網選擇我要退貨，我們將請專人與您聯繫退貨事宜，並協助您取得退貨代碼 。 您可自由選擇部分退/換貨或整筆退/換貨。
+                    </p>
+                </li>
+            </ul>
         </article>
 
         <article class="news">
             <h2>✢付款問題</h2>
-        </article>
-
-        <article class="news">
-            <h2>✢訂購後續問題</h2>
+            <ul>
+                <li>Q: 有哪些付款方式?
+                    <p>1.信用卡一次付清，可使用的信用卡類別為VISA、MasterCard、Debit Card。</p>
+                    <p>2.超商取貨貨到付款。</p>
+                </li>
+            </ul>
         </article>
     </div>
 
@@ -196,6 +288,8 @@
     <div class="copyright">
         ⓟ 2023 Palette_Party All Rights are NOT Reserved
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/global.js"></script>
 
 </body>
 
