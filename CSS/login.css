@@ -26,8 +26,7 @@
 }
 
 form{
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -73,7 +72,7 @@ button{
     vertical-align: middle;
 }
 
-label{
+#login label{
     font-size: 25px;
     float: right;
     cursor: pointer;
@@ -103,4 +102,78 @@ label{
     margin: 0;
     margin-bottom: 5px;
     border: none; 
+}
+
+/* ----------------------診斷-------------------- */
+
+#diag button{
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border: none; 
+}
+
+#diag label{
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    /* background-color: #F59BBE; */
+
+}
+
+#diag label::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #FFC6A9;
+    margin-right: 10px;
+}
+
+#diag {
+    text-align: left;
+}
+
+#diag h2{
+    margin-bottom: 20px;
+}
+
+.diag .down{
+    padding-top: 50px;
+}
+
+#diag input{
+    display: none;
+}
+
+
+input[type=radio]+span {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    user-select: none;
+    transition: all .1s ease;
+}
+
+input[type=radio]:checked+span {
+    /* color:#7E58A5; */
+    /* border-bottom: #7E58A5 2px dashed; */ 
+    background-color: #7e58a5b6;
+}
+
+input[type=radio]+span::before {
+    content: '\2714';
+    display: inline-block;
+    vertical-align: middle;
+    color: #7e58a5df;
+    font-size: 1.6em;
+    opacity: 0;
+    transition: all .2s ease;
+    position: relative;
+    left: -33px;
+}
+
+input[type="radio"]:checked+span::before {
+    opacity: 1;
 }

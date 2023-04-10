@@ -1,15 +1,16 @@
 @import url(reset.css);
+
 @font-face {
     font-family: cubic11;
     src: url(../fonts/fonts/web/Cubic_11_1.010_R.woff);
 }
 
-html{
+html {
     font-size: 10px;
-    cursor: url('../IMG/cur/heartpink.cur'),auto;
+    cursor: url('../IMG/cur/heartpink.cur'), auto;
 }
 
-body{
+body {
     background-image: url(../IMG/bg.jpg);
     background-attachment: fixed;
     line-height: 1.5;
@@ -17,8 +18,8 @@ body{
 }
 
 ::selection {
-	background:#77CEF0;
-	color: #fff;
+    background: #77CEF0;
+    color: #fff;
 }
 
 /* ::-webkit-scrollbar{
@@ -34,19 +35,19 @@ body{
     color: #F06882;
 } */
 
-h1{
+h1 {
     color: #FFC6A9;
     font-size: 2.8rem;
     margin-left: 15px;
     margin-top: 5px;
 }
 
-h2{
+h2 {
     font-size: 3rem;
     color: #7E58A5;
 }
 
-.btnlink{
+.btnlink {
     background-color: #7E58A5;
     font-size: 2.5rem;
     text-decoration: none;
@@ -55,26 +56,30 @@ h2{
     height: 54px;
     line-height: 54px;
     color: #FFC6A9;
-    box-shadow: #583D74 -5px -5px 4px inset,3px 3px 4px white inset;
+    box-shadow: #583D74 -5px -5px 4px inset, 3px 3px 4px white inset;
 }
 
-.btnlink:active{
-    box-shadow: #583D74 6px 5px 4px inset,-3px -2px 7px white inset;
+.btnlink:active {
+    box-shadow: #583D74 6px 5px 4px inset, -3px -2px 7px white inset;
 
 }
 
-.window{
+.window {
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
 }
 
-.up{
+.actbtn {
+    cursor: default;
+}
+
+.up {
     background-color: #7E58A5;
     padding: 5px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    box-shadow: inset 3px 3px 6px white ,inset 3px 3px 6px rgba(255, 255, 255, 0.194) ,inset -5px -5px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 3px 3px 6px white, inset 3px 3px 6px rgba(255, 255, 255, 0.194), inset -5px -5px 6px rgba(0, 0, 0, 0.4);
 }
 
 .up img {
@@ -83,18 +88,18 @@ h2{
     margin-right: 3px;
 }
 
-.down{
-    background-color:#F06882 ;
-    box-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.194) ,inset -5px -5px 6px rgba(0, 0, 0, 0.4),inset 3px 0 6px white;
+.down {
+    background-color: #F06882;
+    box-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.194), inset -5px -5px 6px rgba(0, 0, 0, 0.4), inset 3px 0 6px white;
 }
 
-a{
+a {
     text-decoration: none;
     /* cursor: url('../IMG/cur/Hearthand.cur'),auto; */
 }
 
 /* -------------------天-------------------- */
-.ticker{
+.ticker {
     display: block;
     background-color: #7E58A5;
     padding: 10px;
@@ -103,28 +108,32 @@ a{
     font-size: 1.5rem;
 }
 
-.ticker:hover{
+.ticker:hover {
     background-color: rgb(133, 101, 168);
 }
 
-header{
+header {
     /* background-color: #f59bbedd; */
+    max-width: 1920px;
+    margin: 0 auto;
     position: sticky;
     pointer-events: none;
     top: 0;
     z-index: 99;
 
 }
-header div{
+
+header div {
     /* width: 1200px; */
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
     /* background-color: #fff; */
-    justify-content:space-between;
+    justify-content: space-between;
 }
-header a img{
+
+header a img {
     /* width: 100%; */
     width: 130px;
 }
@@ -135,19 +144,19 @@ header a {
     pointer-events: auto;
 }
 
-header>div>ul{
+header>div>ul {
     display: flex;
     align-items: center;
 }
 
-header>div>ul>li i{
+header>div>ul>li i {
     font-size: 2.6rem;
     color: #7E58A5;
     padding: 20px 0;
     letter-spacing: 25px;
 }
 
-header>div>ul>li i:hover{
+header>div>ul>li i:hover {
     transform: scale(1.05);
     color: #6e4c91;
 }
@@ -155,12 +164,12 @@ header>div>ul>li i:hover{
 
 /* -------------------地-------------------- */
 
-footer{
+footer {
     background-color: #7E58A5;
     border-bottom: #FFC6A9 1px solid;
 }
 
-footer::before{
+footer::before {
     content: "";
     padding: 25px;
     background-color: #7E58A5;
@@ -169,49 +178,52 @@ footer::before{
 
 }
 
-.footerwrap{
-    background-color:#7E58A5;
+.footerwrap {
+    background-color: #7E58A5;
     border-left: #FFC6A9 1px solid;
     border-right: #FFC6A9 1px solid;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr .1fr 1fr ;
+    grid-template-rows: 1fr 1fr .1fr 1fr;
     margin: 0 auto;
     width: 1200px;
 }
 
-.footerwrap h3{
+.footerwrap h3 {
     font-size: 3rem;
     color: #FFC6A9;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
-.footerwrap p,.footerwrap a{
+
+.footerwrap p,
+.footerwrap a {
     font-size: 2rem;
     color: #FFC6A9;
 }
 
-.copyright{
+.copyright {
     font-size: 1.6rem;
     color: #FFC6A9;
     text-align: center;
     background-color: #7E58A5;
     padding: 13px;
 }
-.footerwrap div:first-child{
-    grid-column :1/2;
+
+.footerwrap div:first-child {
+    grid-column: 1/2;
     grid-row: 1/5;
     width: 240px;
     text-align: center;
     align-self: center;
 }
 
-.footerwrap div:first-child img{
+.footerwrap div:first-child img {
     width: 150px;
 }
 
-.footerwrap .prodlist{
+.footerwrap .prodlist {
     grid-column: 2/6;
     grid-row: 1/4;
     width: 960px;
@@ -223,31 +235,31 @@ footer::before{
 
 }
 
-.footerwrap .prodlist h4{
+.footerwrap .prodlist h4 {
     font-size: 2.5rem;
     color: #FFC6A9;
     margin-bottom: 20px;
 }
 
-.footerwrap .prodlist a{
+.footerwrap .prodlist a {
     display: block;
 }
 
-.footerwrap .prodlist p{
+.footerwrap .prodlist p {
     margin-bottom: 10px;
 }
 
-.footerwrap .prodlist li{
+.footerwrap .prodlist li {
     width: 270px;
     margin: 0 20px;
 }
 
-.footerwrap .prodlist ul{
+.footerwrap .prodlist ul {
     display: flex;
     justify-content: space-around;
 }
 
-.footerwrap .page{
+.footerwrap .page {
     grid-column: 2/4;
     grid-row: 4/5;
     display: flex;
@@ -266,10 +278,10 @@ footer::before{
 }
 
 .footerwrap .page h3:nth-child(even) {
-    border-left: #ffc6a9 1px solid ;
+    border-left: #ffc6a9 1px solid;
 }
 
-.footerwrap .page h3 a{
+.footerwrap .page h3 a {
     font-size: 3rem;
     display: block;
     width: 234px;
@@ -277,7 +289,7 @@ footer::before{
     text-align: center;
 }
 
-.footerwrap .snslist{
+.footerwrap .snslist {
     grid-column: 4/6;
     grid-row: 4/5;
     width: 480px;
@@ -285,15 +297,200 @@ footer::before{
     padding: 30px 0;
 }
 
-.footerwrap .snslist ul{
+.footerwrap .snslist ul {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
-.footerwrap .snslist ul li a i{
+.footerwrap .snslist ul li a i {
     font-size: 3.5rem;
     padding: 0 15px;
 }
 
+.footer {
+    display: none;
+}
+
+/* ---------------------414--------------------- */
+
+@media screen and (max-width:414px) {
+
+    .footerwrap ,footer+.copyright,footer::before{
+        display: none;
+    }
+
+    .footer {
+        display: block;
+    }
+    @import url(reset.css);
+@import url(global.css);
+
+/* *{
+    box-sizing: border-box;
+} */
+
+/* body{
+    overflow: hidden;
+} */
+
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    color: #FFC6A9;
+    background-color: #7E58A5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
 
+.footer a{
+    color: #FFC6A9;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.footer h4::before{
+    content: "✢";
+    transition: 1s;
+    display:inline-block;
+    margin-right: 10px;
+}
+
+
+.footer h4{
+    font-size: 18px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer .logo img{
+    width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+} 
+
+.footer .logo{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+/* .footer .logo a:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+} */
+
+
+.footer p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+
+.footer .product_menu ul > li{
+    padding-bottom: 15px;
+}
+
+
+/* .footer .prodlist ul{
+    flex-direction: column;
+}
+
+.footer .prodlist ul li{
+    margin-bottom: 30px;
+} */
+
+.footer .product_menu ,.footer .page, .footer .snslist, .footer .copyrightnew{
+    /* background-color: #fff; */
+    width: 100%;
+    padding-left: 20px;
+}
+
+.footer .product_menu{
+    border-bottom: #FFC6A9 1px solid;
+    border-top: #FFC6A9 1px solid;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.footer .page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.footer .page h3{
+    padding-bottom: 0;
+}
+
+.footer .page a{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+
+
+.footer .snslist{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    border-bottom: #FFC6A9 1px solid;
+    border-top: #FFC6A9 1px solid;
+
+
+}
+
+.footer .snslist ul{
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 25px;
+}
+
+.footer .copyrightnew{
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+.footer .product_menu ol{
+    display: none;
+}
+
+.-menuDisplay{
+    right: 0;
+}
+
+.cover{
+    width: 100vw ;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.623);
+    z-index: 998;
+    display: none;
+}
+
+.more.active::before{
+    transform: rotate(135deg);
+}
+
+.more.active .show{
+    display: block;
+}
+
+}

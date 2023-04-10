@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>色彩診斷 ✢ Palette_Party ✢ Wish you a colourful life!</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+        <!---------------------天---------------------->
+        <div class="cover"></div>
+        <a href="news.html" class="ticker">Palette_Party ✢期間限定快閃店✢ 於7/1~7/15在SOGO百貨忠孝館登場啦♪</a>
+        <header>
+            <div>
+                <a href="index.html"><img src="IMG/LOGO.png" alt=""></a>
+                <ul>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#" id="menuOpen"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="index.html"> <img src="IMG/LOGO.png" alt=""></a>
+                <a href="#" id="menuClose">CLOSE</a>
+                <!-- <i class="fa-solid fa-x"></i> -->
+            </div>
+            <div class="product_menu">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li>
+                        <h4 class="more">Lip Color</h4>
+                        <ol class="show">
+                            <li>
+                                <p>POOL PARTY_水潤光唇釉</p>
+                            </li>
+                            <li><a href="">➺01 櫻桃可樂</a></li>
+                            <li><a href="">➺02 莓果雪沙</a></li>
+                            <li><a href="">➺03 橘子汽水</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4 class="more">Eye Shadow</h4>
+                        <ol class="show">
+                            <li>
+                                <p>PINGO PARTY_拼果眼影盤</p>
+                            </li>
+                            <li><a href="">➺01 葡萄軟糖</a></li>
+                            <li><a href="">➺02 萊姆軟糖</a></li>
+                            <li><a href="">➺03 綜合水果</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4 class="more">Undefined</h4>
+                        <ol class="show">
+                            <li><a href="">➺DISCO PARTY_炫色眼影蜜</a></li>
+                            <li><a href="">➺TRICK or KISS_桃氣唇頰盤</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="page">
+                <h3><a href="index.html#concept">ABOUT</a></h3>
+                <h3><a href="cart.html">CART</a></h3>
+                <h3><a href="faq.html">FAQ</a></h3>
+                <h3><a href="news.html">NEWS</a></h3>
+            </div>
+            <div class="snslist">
+                <h3>OFFICIAL SNS</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#">
+                    <li><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#">
+                    <li><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                ⓟ 2023 Palette_Party All Rights are NOT Reserved
+            </div>
+        </nav>
+    <!---------------------診斷---------------------->
+    <div class="window diag">
+        <div class="up">
+            <img src="IMG/close.jpg" alt="" class="actbtn">
+            <h1>PERSONAL COLOR_個人色彩診斷</h1>
+        </div>
+        <div class="down">
+            <form action="#" id="diag">
+                <h2>Q1.眼睛瞳孔的顏色是？</h2>
+                <label for="Q1-1">
+                    <input type="radio" id="Q1-1" name="Q1"/>
+                    <span>明亮的茶色，看起來閃閃發光。</span>
+                </label>
+                <br>
+                <label for="Q1-2">
+                    <input type="radio" id="Q1-2" name="Q1"/>
+                    <span>紅棕色或焦茶色，黑白眼珠的界線偏柔和印象。</span> 
+                </label>
+                <br>
+                <label for="Q1-3">
+                    <input type="radio" id="Q1-3" name="Q1"/>
+                    <span>深棕色，黑白眼珠的界線較模糊，給人沉穩的印象。</span> 
+                </label>
+                <br>
+                <label for="Q1-4">
+                    <input type="radio" id="Q1-4" name="Q1"/>
+                    <span>黑色或帶紅的深棕色，黑白眼珠界線分明、對比明顯。 </span> 
+                </label>
+                <br>
+                <button type="submit" class="btnlink">下一步</button>
+                <!-- <h2>Q2.頭髮天生的顏色和髮質是？</h2>
+                <label for="Q2-1">
+                    <input type="radio" id="Q2-1" name="Q2"/>
+                    <span>髮色偏明亮的棕色，髮質偏細而柔軟。</span>
+                </label>
+                <br>
+                <label for="Q2-2">
+                    <input type="radio" id="Q2-2" name="Q2"/>
+                    <span>髮色偏紅棕或灰黑，髮質偏細而柔順。</span> 
+                </label>
+                <br>
+                <label for="Q2-3">
+                    <input type="radio" id="Q2-3" name="Q2"/>
+                    <span>髮色偏焦茶色，有重量感。</span> 
+                </label>
+                <br>
+                <label for="Q2-4">
+                    <input type="radio" id="Q2-4" name="Q2"/>
+                    <span>髮色偏純黑色，髮質偏粗且髮量較多。 </span> 
+                </label>
+                <br>
+                <button type="submit" class="btnlink">下一步</button> -->
+
+            </form>
+        </div>
+    </div>
+    <!---------------------地---------------------->
+    <footer>
+        <div class="footerwrap">
+            <div>
+                <img src="IMG/LOGO.png" alt="">
+            </div>
+            <div class="prodlist">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li>
+                        <h4>Lip Color</h4>
+                        <p>POOL PARTY_水潤光唇釉</p>
+                        <a href="#">➺01 櫻桃可樂</a>
+                        <a href="#">➺02 莓果雪沙</a>
+                        <a href="#">➺03 橘子汽水</a>
+                    </li>
+                    <li>
+                        <h4>Eye Shadow</h4>
+                        <p>PINGO PARTY_拼果眼影盤</p>
+                        <a href="#">➺01 葡萄軟糖</a>
+                        <a href="#">➺02 萊姆軟糖</a>
+                        <a href="#">➺03 綜合水果</a>
+                    </li>
+                    <li>
+                        <h4>Undefined</h4>
+                        <p>NEW_新品上市</p>
+                        <a href="#">➺DISCO PARTY_炫色眼影蜜</a>
+                        <a href="#">➺TRICK or KISS_桃氣唇頰盤</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page">
+                <h3><a href="index.html#concept">ABOUT</a></h3>
+                <h3><a href="cart.html">CART</a></h3>
+                <h3><a href="">FAQ</a></h3>
+                <h3><a href="news.html">NEWS</a></h3>
+            </div>
+            <div class="snslist">
+                <h3>OFFICIAL SNS</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#">
+                    <li><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#">
+                    <li><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        ⓟ 2023 Palette_Party All Rights are NOT Reserved
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/global.js"></script>
+
+</body>
+
+</html>

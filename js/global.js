@@ -44,10 +44,20 @@ $(function () {
         if (!$(this).next().is(':visible')) {
             $(this).addClass('active');
             $(this).next().slideToggle();
-        }else{
+        } else {
             $(this).removeClass('active');
             $(this).next().slideToggle();
 
         }
     });
+});
+
+//關閉視窗
+
+
+document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("actbtn")) {
+        e.target.setAttribute('src', '../IMG/close2.png');
+        e.target.closest(".window").setAttribute('style','display: none;');
+    }
 });
