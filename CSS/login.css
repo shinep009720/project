@@ -177,3 +177,46 @@ input[type=radio]+span::before {
 input[type="radio"]:checked+span::before {
     opacity: 1;
 }
+
+/* ---------------------414--------------------- */
+
+@media screen and (max-width:414px) {
+    .window{
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    .keyin{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #7E58A5;
+        background-color: #FFC6A9;
+        border: none;
+        box-shadow: -4px -4px 8px rgb(255, 255, 255) inset,inset 6px 6px 6px #6b4a8c,inset -5px -5px 0px #7E58A5,#4D545A 5px 5px 0px inset;
+    }
+    .window .down{
+        color: #FFC6A9;
+        padding: 30px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    #login label{
+        display: block;
+        float: none;
+        margin-bottom: 20px;
+    }
+    #login button{
+        position: static;
+    }
+    
+    .login h1 , .forgetPassWord h1 ,.signin h1{
+        font-size: 2rem;
+    }
+    .forgetPassWord h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+}

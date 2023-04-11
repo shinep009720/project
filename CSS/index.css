@@ -983,6 +983,11 @@ html {
         left: -116%;
     }
 
+    .conceptwrap {
+        margin-bottom: 60px
+    }
+
+
     .concept {
         width: 90%;
     }
@@ -1037,7 +1042,7 @@ html {
         text-shadow: 0px 0px 5px #ffffff, 1px 1px 8px #7E58A5;
         text-align: center;
         line-height: 400px;
-
+        margin-bottom: 80px;
         animation: colourful;
         animation-duration: 5s;
         animation-iteration-count: infinite;
@@ -1085,6 +1090,12 @@ html {
 
     .follow .follow_words {
         display: none;
+    }
+
+    .follow {
+        margin-top: 90px;
+        margin-bottom: 60px;
+
     }
 
     .ins {
