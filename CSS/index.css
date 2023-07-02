@@ -147,18 +147,6 @@
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
 }
 
-.newwindow ul .coupon {
-    position: absolute;
-    top: 100%;
-    left: 35%;
-    box-shadow: none;
-    width: auto;
-    z-index: 2;
-    box-sizing: border-box;
-    padding: 200px;
-    width: 500px;
-    height: 400px;
-}
 
 .up {
     background-color: #7E58A5;
@@ -216,7 +204,7 @@
     z-index: 3;
 }
 
-.newwindow ul .five {
+/* .newwindow ul .five {
     width: 320px;
     position: absolute;
     top: 324%;
@@ -224,7 +212,7 @@
     z-index: 6;
     display: none;
 
-}
+} */
 
 .filewrap {
     display: flex;
@@ -264,7 +252,7 @@
 
 .newfile:hover {
     transform: scale(1.05);
-    border: #583D74 3px dashed;
+    outline: #583D74 4px dashed;
     z-index: 10;
 }
 
@@ -322,7 +310,6 @@
     top: -152%;
     left: 163%;
     font-size: 2.5rem;
-
 }
 
 .newfile .up h1 {
@@ -330,6 +317,53 @@
     font-size: 2rem;
     margin-left: 15px;
     margin-top: 5px;
+}
+
+.undefinedlink{
+    user-select: none;
+}
+
+.newwindow ul .coupon {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 46.5%;
+    transform: translatex(-25%);
+    font-size: 2rem;
+    box-shadow: none;
+    width:30%;
+    z-index: 2;
+    /* background-color: #fff; */
+    padding: 170px 0 120px;
+}
+
+.newwindow ul .coupon span {
+    display: inline-block;
+    border: #7E58A5 dashed 4px;
+    color: #7E58A5;
+    font-weight: bold;
+    padding: 7px;
+    cursor: default;
+}
+
+.newwindow ul .coupon img {
+    display: block;
+    margin: 10px auto 0;
+    user-select: none;
+    animation: swing;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2);
+    animation-duration: 1s;
+    transform: rotate(10deg);
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
 }
 
 /* ----------------------品牌概念-------------------- */
@@ -470,6 +504,7 @@ html {
     margin: 50px auto;
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
     background-color: #fff;
+    position: relative;
 }
 
 .product .up {
@@ -513,25 +548,27 @@ html {
 }
 
 .product .down ul::-webkit-scrollbar-thumb {
-    background-color: #7E58A5;
+    background-color: #F06882;
     border-left: #4D545A 3px solid;
     border-top: #4D545A 3px solid;
     border-bottom: #4D545A 3px solid;
 }
 
 .product .down ul::-webkit-scrollbar-button {
-    background-color: #644586;
+    /* background-color: #644586; */
     border-left: #4D545A 3px solid;
+    display: none;
 }
 
 .product .down ul::-webkit-scrollbar-track {
     border-left: #4D545A 3px solid;
+    background-color: #7E58A5;
 }
 
 
 .product .down ul li:hover {
     transform: scale(1.05);
-    outline: #583D74 3px dashed;
+    outline: #583D74 4px dashed;
 }
 
 .product .down ul li {
@@ -867,7 +904,7 @@ html {
 
     .container {
         width: 100%;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 
     .kv h6 {
@@ -949,16 +986,23 @@ html {
     }
 
     .newwindow ul .coupon {
-        top: 190%;
-        left: 0%;
-        padding: 100px;
-        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 140%;
+        left: 40%;
+        transform: translatex(-25%);
+        font-size: 2rem;
+        box-shadow: none;
+        width:30%;
+        z-index: 2;
+        box-sizing: border-box;
+        /* background-color: #fff; */
+        padding: 170px 0 120px;
     }
 
     .newfile1 .six {
         top: 225%;
         left: 46%;
-
     }
 
     .newfile1:hover .six {
@@ -1003,10 +1047,12 @@ html {
     }
 
     .concept .down p {
-        font-size: 1rem;
+        font-size: 1.6rem;
         color: #4D545A;
         text-align-last: left;
-        margin: 0 50px 20px;
+        margin: 0;
+        margin-left: 10%;
+        margin-bottom: 5%;
     }
 
     .concept .up h1 {

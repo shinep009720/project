@@ -66,6 +66,12 @@ h2 {
 
 .window {
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity .5s, transform .5s;
+    user-select: none;
+}
+
+.window.-close{
+    transform: scale(40%); pointer-events: none; opacity:0;
 }
 
 .actbtn {
@@ -318,10 +324,16 @@ footer::before {
     h1 {
         font-size: 2rem;
     }
+
     h2 {
         font-size: 2rem;
     }
-    
+
+    header {
+        background-color: #f59bbedd;
+
+    }
+
     .footerwrap,
     footer+.copyright,
     footer::before {
@@ -369,7 +381,7 @@ footer::before {
 
     .footer h4::before {
         content: "✢";
-        transition: 1s;
+        transition: .6s;
         display: inline-block;
         margin-right: 10px;
     }
@@ -377,7 +389,7 @@ footer::before {
 
     .footer h4 {
         font-size: 18px;
-        padding-bottom: 10px;
+        padding: 10px 0;
         cursor: pointer;
     }
 
@@ -444,7 +456,7 @@ footer::before {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 15px;
+        padding: 0px;
     }
 
     .footer .page h3 {
@@ -452,7 +464,7 @@ footer::before {
     }
 
     .footer .page a {
-        padding-bottom: 0;
+        padding:15px 0;
         margin-bottom: 0;
         vertical-align: middle;
     }
@@ -474,8 +486,21 @@ footer::before {
         display: flex;
         justify-content: space-evenly;
         font-size: 25px;
+        padding: 10px;
+        box-sizing: border-box;    
     }
-
+    .footer .snslist ul li {
+        box-sizing: border-box;
+    }
+    
+    .footer .snslist ul li a{
+        padding: 15px;
+    }
+    
+    .footer .snslist h3{
+        padding-bottom: 0;
+    }
+    
     .footer .copyrightnew {
         padding-top: 15px;
         font-size: 12px;
@@ -506,5 +531,8 @@ footer::before {
     .more.active .show {
         display: block;
     }
-
+    .show li a{
+        padding: 5px 0;
+        font-size: 14px;
+    }
 }

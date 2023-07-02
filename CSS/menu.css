@@ -9,6 +9,7 @@
     overflow: hidden;
 } */
 
+/*樣式*/
 .menu{
     width: 380px;
     height: 100vh;
@@ -44,7 +45,7 @@
 
 .menu h4::before{
     content: "✢";
-    transition: 1s;
+    transition: .6s;
     display:inline-block;
     margin-right: 10px;
 }
@@ -52,7 +53,7 @@
 
 .menu h4{
     font-size: 18px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     cursor: pointer;
 }
 
@@ -116,7 +117,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 15px;
+    padding: 0px;
 }
 
 .menu .page h3{
@@ -124,7 +125,7 @@
 }
 
 .menu .page a{
-    padding-bottom: 0;
+    padding:15px 0;
     margin-bottom: 0;
     vertical-align: middle;
 }
@@ -134,7 +135,6 @@
 .menu .snslist{
     text-align: center;
     padding-top: 15px;
-    padding-bottom: 15px;
     padding-left: 0;
     border-bottom: #FFC6A9 1px solid;
     border-top: #FFC6A9 1px solid;
@@ -146,6 +146,19 @@
     display: flex;
     justify-content:space-evenly;
     font-size: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.menu .snslist ul li {
+    box-sizing: border-box;
+}
+
+.menu .snslist ul li a{
+    padding: 15px;
+}
+
+.menu .snslist h3{
+    padding-bottom: 0;
 }
 
 .menu .copyright{
@@ -156,6 +169,8 @@
 .menu .product_menu ol{
     display: none;
 }
+
+/* js */
 
 .-menuDisplay{
     right: 0;
@@ -176,4 +191,9 @@
 
 .more.active .show{
     display: block;
+}
+
+.show li a{
+    padding: 5px 0;
+    font-size: 14px;
 }

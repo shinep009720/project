@@ -58,6 +58,70 @@ $(function () {
 document.addEventListener("click", function (e) {
     if (e.target.classList.contains("actbtn")) {
         e.target.setAttribute('src', '../IMG/close2.png');
-        e.target.closest(".window").setAttribute('style','display: none;');
+        // let place = ;
+        let window = e.target.closest(".window");
+        window.classList.add('-close');
     }
+});
+
+//視窗拖曳 資料來源https://ssk7833.github.io/blog/2016/10/06/solution-of-multiple-draggable-elements-overlay-each-other-html/
+
+// var elementSelected;
+// var mouseX, mouseY;
+// var zIndex = 0;
+// document.querySelectorAll(".window").forEach(function (element, index) {
+//     element.style.left = 400;
+//     element.addEventListener('mousedown', function (event) {
+//         elementSelected = element;
+//         mouseX = event.clientX - parseInt(getComputedStyle(elementSelected).left);
+//         mouseY = event.clientY - parseInt(getComputedStyle(elementSelected).top);
+//         // move this element to top layer
+//         elementSelected.style['z-index'] = ++zIndex;
+//         //document.querySelector(".container").appendChild(elementSelected);
+//     })
+// });
+
+// document.addEventListener('mousemove', function (event) {
+//     if (elementSelected !== undefined) {
+//         elementSelected.style.left = event.clientX - mouseX + 'px';
+//         elementSelected.style.top = event.clientY - mouseY + 'px';
+//     }
+// });
+
+// document.addEventListener('mouseup', function (event) {
+//     elementSelected = undefined;
+
+// });
+var elementSelected;
+var mouseX, mouseY;
+var zIndex = 6;
+document.querySelectorAll(".up").forEach(function (element, index) {
+    // element.closest('.window').style.left = 400;
+    element.addEventListener('mousedown', function (event) {
+        elementSelected = element.closest('.window');
+        // elementSelected.setAttribute('style', 'position:relative;');
+        mouseX = event.clientX - parseInt(getComputedStyle(elementSelected).left);
+        mouseY = event.clientY - parseInt(getComputedStyle(elementSelected).top);
+        // move this element to top layer
+        elementSelected.style['z-index'] = ++zIndex;
+        //document.querySelector(".container").appendChild(elementSelected);
+    })
+});
+document.querySelectorAll(".window").forEach(function (element, index) {
+    element.addEventListener('mousedown', function (event) {
+        // move this element to top layer
+        element.style['z-index'] = ++zIndex;
+    })
+});
+
+document.addEventListener('mousemove', function (event) {
+    if (elementSelected !== undefined) {
+        elementSelected.style.left = event.clientX - mouseX + 'px';
+        elementSelected.style.top = event.clientY - mouseY + 'px';
+    }
+});
+
+document.addEventListener('mouseup', function (event) {
+    elementSelected = undefined;
+
 });

@@ -7,6 +7,7 @@
     width: 850px;
     font-size: 30px;
     margin: 0 auto 100px;
+    position: relative;
 }
 
 .up img {
